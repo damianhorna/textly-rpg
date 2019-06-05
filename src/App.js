@@ -1,20 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <div className="page-content" >
-        <div className="question">question</div>
-        <div className="answer">answer1</div>
-        <div>answer2</div>
-      </div>
+    return (
+        <div className="App">
+            <div className="page-content">
+                <div className="question">Hello, what's your name?</div>
+                <div className="answer">Jon Snow</div>
+                <div className="answer">Arya Stark</div>
+            </div>
 
 
-
-    </div>
-  );
+        </div>
+    );
 }
 
 export default App;

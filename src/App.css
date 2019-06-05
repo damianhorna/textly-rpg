@@ -7,14 +7,20 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
+
 }
 
 .question {
-
+    padding-bottom: 30px;
 }
 
 .answer {
-
+    margin: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 7px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 7px -1px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 7px -1px rgba(0,0,0,0.75);
+    cursor: pointer;
 }
 
 .App-logo {
