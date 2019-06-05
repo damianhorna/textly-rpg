@@ -23,6 +23,10 @@
     cursor: pointer;
 }
 
+.answer:hover{
+    background-color: #d3e4ff;
+}
+
 .App-logo {
     animation: App-logo-spin infinite 20s linear;
     height: 40vmin;

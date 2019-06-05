@@ -1,0 +1,29 @@
+{
+  "q1": {
+    "question": "What's your name?",
+    "answers": [
+      {
+        "text": "Arya Stark",
+        "next": "q2"
+      },
+      {
+        "text": "Jon Snow",
+        "next": "q2"
+      }
+    ]
+  },
+
+  "q2": {
+    "question": "What's your name again?",
+    "answers": [
+      {
+        "text": "Arya Stark again",
+        "next": "q1"
+      },
+      {
+        "text": "Jon Snow again",
+        "next": "q1"
+      }
+    ]
+  }
+}
