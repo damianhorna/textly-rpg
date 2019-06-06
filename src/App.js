@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import scenario from './scenario.json';
+import Chance from 'chance';
 
 class App extends React.Component{
 
@@ -11,9 +12,11 @@ class App extends React.Component{
         }
     }
 
-    loadNext(q){
+    loadNext(next){
+        let chance = new Chance();
+        let nextQuestion =  chance.weighted(next.questions, next.probabilities);
         this.setState({
-            current: q
+            current: nextQuestion //next.questions[0]
         })
     }
 

@@ -4,25 +4,97 @@
     "answers": [
       {
         "text": "Arya Stark",
-        "next": "q2"
+        "next": {
+          "questions": ["q2"],
+          "probabilities": [1]
+        }
       },
       {
         "text": "Jon Snow",
-        "next": "q2"
+        "next": {
+          "questions": ["q2"],
+          "probabilities": [1]
+        }
       }
     ]
   },
 
   "q2": {
-    "question": "What's your name again?",
+    "question": "Try to open the lock?",
     "answers": [
       {
-        "text": "Arya Stark again",
-        "next": "q1"
+        "text": "Yes",
+        "next": {
+          "questions": ["q3", "q4"],
+          "probabilities": [0.5, 0.5]
+        }
       },
       {
-        "text": "Jon Snow again",
-        "next": "q1"
+        "text": "No",
+        "next": {
+          "questions": ["q5"],
+          "probabilities": [1]
+        }
+      }
+    ]
+  },
+
+  "q3": {
+    "question": "You opened the lock successfully!",
+    "answers": [
+      {
+        "text": "Yay",
+        "next": {
+          "questions": ["q1"],
+          "probabilities": [1]
+        }
+      },
+      {
+        "text": "Yay",
+        "next": {
+          "questions": ["q1"],
+          "probabilities": [1]
+        }
+      }
+    ]
+  },
+
+  "q4": {
+    "question": "You didn't manage to open the lock :C",
+    "answers": [
+      {
+        "text": "*sobbs*",
+        "next": {
+          "questions": ["q1"],
+          "probabilities": [1]
+        }
+      },
+      {
+        "text": "*sobbs*",
+        "next": {
+          "questions": ["q1"],
+          "probabilities": [1]
+        }
+      }
+    ]
+  },
+
+  "q5": {
+    "question": "You decided not to open the lock",
+    "answers": [
+      {
+        "text": "and?",
+        "next": {
+          "questions": ["q1"],
+          "probabilities": [1]
+        }
+      },
+      {
+        "text": "and?",
+        "next": {
+          "questions": ["q1"],
+          "probabilities": [1]
+        }
       }
     ]
   }
